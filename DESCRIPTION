@@ -1,11 +1,10 @@
 Package: r2notion
 Type: Package
-Title: What the Package Does (Title Case)
-Version: 0.1.0
-Author: Who wrote it
-Maintainer: The package maintainer <yourself@somewhere.net>
-Description: More about what it does (maybe more than one line)
-    Use four spaces when indenting paragraphs within the Description.
-License: What license is it under?
+Title: Send Stuff from R to Notion
+Version: 0.0.0.9000
+Author: Trevor Burrows
+Maintainer: Trevor Burrows <trevor.burrows@gmail.com>
+Description: Functions to work with the Notion API from R. Work in progress, documentation coming soon!
+License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
