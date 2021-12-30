@@ -4,7 +4,6 @@
 #'
 #' @param key A string.
 #'
-#' @return
 #' @export
 #'
 #' @examples
@@ -28,7 +27,7 @@ set_notion_key <- function(key = NULL) {
 get_notion_key <- function() {
   key <- Sys.getenv("NOTION_KEY")
   if (identical(key, "")) {
-    stop("No API key found, please supply with `NOTION_KEY` argument or use `set_api_key` to set the NOTION_KEY environment variable")
+    stop("No API key found, please supply with `NOTION_KEY` argument or use `set_notion_key` to set the NOTION_KEY environment variable")
   }
   key
 }

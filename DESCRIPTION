@@ -11,4 +11,6 @@ LazyData: true
 RoxygenNote: 7.1.2
 Imports: 
     askpass,
+    httr2,
+    magrittr,
     tibble

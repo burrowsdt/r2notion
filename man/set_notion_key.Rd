@@ -9,9 +9,6 @@ set_notion_key(key = NULL)
 \arguments{
 \item{key}{A string.}
 }
-\value{
-
-}
 \description{
 Call \code{set_notion_key()} to save your Notion secret key as an environment variable. Leave the \code{key} parameter empty to call \code{askpass} and enter your secret there.
 }
