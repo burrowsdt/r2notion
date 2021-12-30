@@ -27,10 +27,11 @@ devtools::install_github("burrowsdt/r2notion")
 Using the Notion API requires a bit of setup on your part. Follow these
 steps:
 
-1.  Set up a Notion integration for your workspace following “Step 1:
-    Create an Integration” on this page. Name the integration anything
-    you want - “r2notion integration” is fine - and then copy the
-    “Internal Integration Token” to some place safe.
+1.  Set up a Notion integration for your workspace [following “Step 1:
+    Create an Integration” on this
+    page](https://developers.notion.com/docs/getting-started). Name the
+    integration anything you want - “r2notion integration” is fine - and
+    then copy the “Internal Integration Token” to some place safe.
 
 2.  Save your token as an environment variable by calling
     `r2notion::set_notion_key()`. A separate window will open asking you
