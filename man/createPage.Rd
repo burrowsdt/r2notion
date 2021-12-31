@@ -7,7 +7,7 @@
 createPage(page_id = NULL, title, content = NULL, postPage = FALSE)
 }
 \arguments{
-\item{page_id}{Character string. The Notion page id of the parent page for your new page.}
+\item{page_id}{Character string. The Notion page id or URL for the parent page of your new page.}
 
 \item{title}{Character string. The title of your new page.}
 

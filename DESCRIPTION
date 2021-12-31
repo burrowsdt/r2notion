@@ -13,4 +13,5 @@ Imports:
     askpass,
     httr2,
     magrittr,
+    stringr,
     tibble

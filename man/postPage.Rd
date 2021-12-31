@@ -9,7 +9,7 @@ postPage(page, page_id = NULL)
 \arguments{
 \item{page}{List object representing a page block in Notion. Use \code{createPage} to create a new page block.}
 
-\item{page_id}{Character string. The Notion page id of the parent page for your the page being posted.}
+\item{page_id}{Character string. The Notion page id or URL for the parent page of the page being posted.}
 }
 \value{
 httr2 response
