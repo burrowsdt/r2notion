@@ -1,10 +1,12 @@
-#' Add children blocks to parent blocks.
+#' Add children blocks to parent blocks that have not yet been posted.
 #'
-#' \code{addChildren} facilitates adding children blocks to parent blocks
-#' whose type allows it. Currently this includes "paragraph",
-#' "bulleted_list_item", "numbered_list_item", "toggle", "to_do", "quote",
-#' "callout", "synced_block", "template", "column", "child_page", and
-#' "child_database".
+#' \code{addChildren} facilitates adding children blocks to parent blocks that
+#' have not yet been posted (providing the block type allows children).
+#' Currently this includes "paragraph", "bulleted_list_item", "numbered_list_item",
+#' "toggle", "to_do", "quote", "callout", "synced_block", "template", "column",
+#' "child_page", and "child_database".
+#'
+#' To add children to blocks that are already posted, use \code{patchAppendBlocks}.
 #'
 #' @param parentBlock Data frame. The parent block to add children to.
 #' @param children Data frame. The child block(s) you are adding.

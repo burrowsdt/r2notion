@@ -12,6 +12,8 @@ RoxygenNote: 7.1.2
 Imports: 
     askpass,
     httr2,
+    jsonlite,
     magrittr,
+    purrr,
     stringr,
     tibble

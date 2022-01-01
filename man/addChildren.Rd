@@ -2,7 +2,7 @@
 % Please edit documentation in R/addChildren.R
 \name{addChildren}
 \alias{addChildren}
-\title{Add children blocks to parent blocks.}
+\title{Add children blocks to parent blocks that have not yet been posted.}
 \usage{
 addChildren(parentBlock, children)
 }
@@ -15,11 +15,11 @@ addChildren(parentBlock, children)
 Data frame object representing the Notion block object.
 }
 \description{
-\code{addChildren} facilitates adding children blocks to parent blocks
-whose type allows it. Currently this includes "paragraph",
-"bulleted_list_item", "numbered_list_item", "toggle", "to_do", "quote",
-"callout", "synced_block", "template", "column", "child_page", and
-"child_database".
+\code{addChildren} facilitates adding children blocks to parent blocks that
+have not yet been posted (providing the block type allows children).
+Currently this includes "paragraph", "bulleted_list_item", "numbered_list_item",
+"toggle", "to_do", "quote", "callout", "synced_block", "template", "column",
+"child_page", and "child_database".
 }
 \examples{
 toggleBlock <- createTextBlock("toggle","Outer toggle text")
