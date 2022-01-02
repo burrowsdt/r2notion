@@ -7,16 +7,17 @@
 patchAppendBlocks(content_id, ...)
 }
 \arguments{
-\item{content_id}{Character string. The Notion page id or URL for the parent block to append to.}
+\item{content_id}{Character string. The Notion id or URL for the parent block to append to.}
 
-\item{...}{Data frames representing Notion blocks. May enter more than one.}
+\item{...}{Data frame representing Notion content to add to parent block. May accept multiple blocks.}
 }
 \value{
 httr2 response
 }
 \description{
-Append block objects to published blocks/pages. Pass blocks to append as individual unnamed arguments.
-This function will format and send the PATCH request to Notion.
+Append block objects to published blocks/pages. Pass blocks as individual unnamed arguments.
+This function will format and send the PATCH request to Notion. Although you can append multiple
+blocks at once, the destinaton (parent) block must be the same for all appending blocks.
 }
 \examples{
 testBlock1 <- createTextBlock("paragraph", "My first test block")

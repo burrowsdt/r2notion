@@ -5,7 +5,7 @@
 #' blocks at once, the destinaton (parent) block must be the same for all appending blocks.
 #'
 #' @param content_id Character string. The Notion id or URL for the parent block to append to.
-#' @param ... Data frames representing Notion blocks. May enter more than one.
+#' @param ... Data frame representing Notion content to add to parent block. May accept multiple blocks.
 #'
 #' @return httr2 response
 #' @export

@@ -4,12 +4,12 @@
 \alias{addChildren}
 \title{Add children blocks to parent blocks that have not yet been posted.}
 \usage{
-addChildren(parentBlock, children)
+addChildren(parentBlock, ...)
 }
 \arguments{
 \item{parentBlock}{Data frame. The parent block to add children to.}
 
-\item{children}{Data frame. The child block(s) you are adding.}
+\item{...}{Data frame representing Notion content to add to parent block. May accept multiple blocks.}
 }
 \value{
 Data frame object representing the Notion block object.
@@ -21,11 +21,15 @@ Currently this includes "paragraph", "bulleted_list_item", "numbered_list_item",
 "toggle", "to_do", "quote", "callout", "synced_block", "template", "column",
 "child_page", and "child_database".
 }
+\details{
+To add children to blocks that are already posted, use \code{patchAppendBlocks}.
+}
 \examples{
 toggleBlock <- createTextBlock("toggle","Outer toggle text")
 stuffForToggle <- createTextBlock("paragraph", "inner toggle text")
-toggleBlock <- addChildren(toggleBlock, stuffForToggle)
+moreStuffForToggle <- createTextBlock("quote", "Woof woof")
+finalToggleBlock <- addChildren(toggleBlock, stuffForToggle, moreStuffForToggle)
 ## Pipe-friendly
-toggleBlock <- createTextBlock("toggle","Outer toggle text") \%>\%
-addChildren(createTextBlock("paragraph", "inner toggle text"))
+finalToggleBlock <- createTextBlock("toggle","Outer toggle text") \%>\%
+addChildren(createTextBlock("paragraph", "inner toggle text"), moreStuffForToggle)
 }

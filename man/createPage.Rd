@@ -4,24 +4,24 @@
 \alias{createPage}
 \title{Create a page in Notion.}
 \usage{
-createPage(page_id = NULL, title, content = NULL, postPage = FALSE)
+createPage(page_id = NULL, title, postPage = FALSE, ...)
 }
 \arguments{
 \item{page_id}{Character string. The Notion page id or URL for the parent page of your new page.}
 
 \item{title}{Character string. The title of your new page.}
 
-\item{content}{Data frame. The content block to be added to your new page.}
-
 \item{postPage}{Boolean. If set to TRUE, the final page block will be posted to Notion.}
+
+\item{...}{Data frame representing Notion content to add to page. May accept multiple blocks.}
 }
 \value{
 List object representing a Notion page block.
 }
 \description{
-This function facilitates basic page creation in Notion. Create a block using createTextBlock or a
-similar function and pass to the content parameter to create a page with content. Returns a list object
-representing a Notion page block.
+This function facilitates basic page creation in Notion. Create one or more blocks using createTextBlock or a
+similar function and pass as unnamed arguments to create a page with content. Returns a list object
+representing a Notion page block. To publish automatically, set \code{postPage = TRUE}.
 }
 \examples{
 newParagraphBlock <- createTextBlock("paragraph", "This is a new paragraph block")

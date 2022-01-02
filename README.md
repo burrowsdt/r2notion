@@ -7,9 +7,11 @@
 <!-- badges: end -->
 
 r2notion wraps the primary functions of the Notion API, allowing you to
-create pages and send content to Notion from R. This package is under
-development and this readme may not accurately reflect its current
-state. To see a current list of working features, click here.
+create pages and send content to Notion from R.
+
+This package is under development and this readme may not accurately
+reflect its current state. To see a current list of working features,
+click here.
 
 ## Installation
 
@@ -44,15 +46,21 @@ steps:
     a page using `r2notion`, you can use the full URL or just the id –
     the package will extract the id from the URL if necessary.
 
-## Current Working Features
+## Current Working Functions
 
 -   `set_notion_key()` - set your notion secret token as an environment
     variable
 -   `get_notion_key()` - retrieves your notion token
 -   `createTextBlock()` - Create a new block of one of the following
     types: paragraph, heading_1, heading_2, heading_3, callout, quote,
-    bulleted_list_item, numbered_list_item, to_do, toggle.
--   `addChildren()` - Add children to a block that supports children
-    (i.e. toggle)
--   `createPage()` - Create a new page with or without content blocks
+    bulleted_list_item, numbered_list_item, to_do, toggle. Blocks can
+    then be added to a new page using `createPage` or to a parent block
+    or page using `addChildren`.
+-   `addChildren()` - Add children to an unpublished block that allows
+    children (i.e. toggle). Supports adding multiple blocks at once. To
+    add blocks to a published block, use `patchAppendBlocks`.
+-   `createPage()` - Create a new page with or without content blocks.
+    Supports adding multiple blocks at once.
 -   `postPage()` - Post page to Notion
+-   `patchAppendBlocks()` - Append new blocks to published blocks or
+    pages.
