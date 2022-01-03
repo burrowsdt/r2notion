@@ -47,6 +47,7 @@ Using the Notion API requires a bit of setup on your part. Follow these steps:
 * `set_notion_key()` - set your notion secret token as an environment variable
 * `get_notion_key()` - retrieves your notion token
 * `createTextBlock()` - Create a new block of one of the following types: paragraph, heading_1, heading_2, heading_3, callout, quote, bulleted_list_item, numbered_list_item, to_do, toggle. Blocks can then be added to a new page using `createPage` or to a parent block or page using `addChildren`.
+* `createReferenceBlock()` - Create a new block of one of the following types: image, video, file, pdf, bookmark. Captions are not currently enabled.
 * `addChildren()` - Add children to an unpublished block that allows children (i.e. toggle). Supports adding multiple blocks at once. To add blocks to a published block, use `patchAppendBlocks`.
 * `createPage()` - Create a new page with or without content blocks. Supports adding multiple blocks at once.
 * `postPage()` - Post page to Notion

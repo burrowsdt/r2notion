@@ -3,6 +3,7 @@
 export("%>%")
 export(addChildren)
 export(createPage)
+export(createReferenceBlock)
 export(createTextBlock)
 export(get_notion_key)
 export(patchAppendBlocks)

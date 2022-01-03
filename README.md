@@ -56,6 +56,9 @@ steps:
     bulleted_list_item, numbered_list_item, to_do, toggle. Blocks can
     then be added to a new page using `createPage` or to a parent block
     or page using `addChildren`.
+-   `createReferenceBlock()` - Create a new block of one of the
+    following types: image, video, file, pdf, bookmark. Captions are not
+    currently enabled.
 -   `addChildren()` - Add children to an unpublished block that allows
     children (i.e. toggle). Supports adding multiple blocks at once. To
     add blocks to a published block, use `patchAppendBlocks`.
